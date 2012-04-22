@@ -83,7 +83,7 @@ class TelnetServer( Protocol):
 def main():
         factory = Factory()
         factory.protocol = TelnetServer
-        reactor.listenTCP( 8007, factory)
+        reactor.listenTCP( 10000, factory)
         reactor.run()
 
 main()
